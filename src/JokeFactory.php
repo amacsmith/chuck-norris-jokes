@@ -198,15 +198,13 @@ class JokeFactory
         'It is believed dinosaurs are extinct due to a giant meteor. That\'s true if you want to call Chuck Norris a giant meteor.',
     ];
 
-
     /**
      * JokeFactory constructor.
      * @param array|null $jokes
      */
     public function __construct(array $jokes = null)
     {
-
-        if($jokes !== null){
+        if ($jokes !== null) {
             $this->jokes = $jokes;
         }
     }
