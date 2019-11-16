@@ -227,8 +227,8 @@ class JokeFactory
      */
     public function getRandomJokes(int $count = 1)
     {
-        if($count <= 0){
-            Throw new RuntimeException("getRandomJokes requires a integer greater than 0. $count was used for \$count argument.", 500);
+        if ($count <= 0) {
+            throw new RuntimeException("getRandomJokes requires a integer greater than 0. $count was used for \$count argument.", 500);
         }
 
         $jokes = [];
