@@ -1,5 +1,5 @@
 {
-    "name": "amac/chuck-norris-jokes",
+    "name": "amacsmith/chuck-norris-jokes",
     "description": "create random chuck norris jokes.",
     "type": "library",
     "license": "MIT",
@@ -15,12 +15,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Amac\\ChuckNorrisJokes\\": "src/"
+            "AMacSmith\\ChuckNorrisJokes\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Amac\\ChuckNorrisJokes\\Tests\\": "tests"
+            "AMacsmith\\ChuckNorrisJokes\\Tests\\": "tests"
         }
     }
 }

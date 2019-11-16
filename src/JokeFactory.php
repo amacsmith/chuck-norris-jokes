@@ -1,6 +1,6 @@
 <?php
 
-namespace Amac\ChuckNorrisJokes;
+namespace AMacSmith\ChuckNorrisJokes;
 
 class JokeFactory
 {
