@@ -7,8 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class JokeFactoryTest extends TestCase
 {
-
-protected $chuckNorrisjokes = [
+    protected $chuckNorrisjokes = [
 'MacGyver can build an airplane out of gum and paper clips. Chuck Norris can kill him and take it.',
 'Chuck Norris doesn\'t read books. He stares them down until he gets the information he wants.',
 'If you ask Chuck Norris what time it is, he always answers "Two seconds till". After you ask "Two seconds to what?", he roundhouse kicks you in the face.',
@@ -206,7 +205,7 @@ protected $chuckNorrisjokes = [
     public function it_returns_a_random_joke()
     {
         $jokes = new JokeFactory([
-            'This is a joke'
+            'This is a joke',
         ]);
         $joke = $jokes->getRandomJoke();
 
@@ -221,5 +220,4 @@ protected $chuckNorrisjokes = [
 
         $this->assertContains($joke, $this->chuckNorrisjokes);
     }
-
 }
