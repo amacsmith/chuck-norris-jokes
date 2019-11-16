@@ -2,6 +2,8 @@
 
 Create random chuck norris jokes.
 
+[![Build Status](https://travis-ci.org/amacsmith/chuck-norris-jokes.svg?branch=master)](https://travis-ci.org/amacsmith/chuck-norris-jokes)
+
 ## Installation
 
 Require using composer:
