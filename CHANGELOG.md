@@ -7,9 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ## [1.1.0] - 2019-11-16
+### Updated
+- README.md
+
+## [1.1.0] - 2019-11-16
 ### Added
-- Added Tests
-- Added getRandomJokes() function
+- getRandomJokes() function
+- the_number_of_jokes_requested_cant_be_negative, it_returns_the_number_of_jokes_requested tests
 
 ## [1.0.0] - 2019-11-16
 ### Added
