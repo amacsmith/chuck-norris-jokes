@@ -1,6 +1,6 @@
 {
     "name": "amacsmith/chuck-norris-jokes",
-    "description": "create random chuck norris jokes.",
+    "description": "Create random chuck norris jokes.",
     "type": "library",
     "license": "MIT",
     "authors": [

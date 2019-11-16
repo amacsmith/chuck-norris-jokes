@@ -2,6 +2,9 @@
 
 namespace AMacSmith\ChuckNorrisJokes;
 
+use Exception;
+use RuntimeException;
+
 class JokeFactory
 {
     protected $jokes = [
@@ -209,8 +212,30 @@ class JokeFactory
         }
     }
 
+    /**
+     * @return mixed
+     */
     public function getRandomJoke()
     {
         return $this->jokes[array_rand($this->jokes)];
+    }
+
+    /**
+     * @param int $count
+     * @return mixed
+     * @throws Exception
+     */
+    public function getRandomJokes(int $count = 1)
+    {
+        if($count <= 0){
+            Throw new RuntimeException("getRandomJokes requires a integer greater than 0. $count was used for \$count argument.", 500);
+        }
+
+        $jokes = [];
+        foreach ($randomKey = array_rand($this->jokes, $count) as $rkey) {
+            $jokes[] = $this->jokes[$rkey];
+        }
+
+        return $jokes;
     }
 }
