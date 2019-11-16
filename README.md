@@ -15,9 +15,11 @@ composer require amacsmith/chuck-norris-jokes
 ```php
 use AMacSmith\ChuckNorrisJokes\JokeFactory;
 
-$jokes = new JokeFactory();
+$jokeFactory = new JokeFactory();
 
 $joke = $jokes->getRandomJoke();
+
+$jokes = $jokes->getRandomJokes(10);
 ```
 
 ## Contributing
