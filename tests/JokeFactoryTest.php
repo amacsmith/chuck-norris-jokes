@@ -5,19 +5,14 @@
 namespace AMacSmith\ChuckNorrisJokes\Tests;
 
 use AMacSmith\ChuckNorrisJokes\JokeFactory;
-
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use GuzzleHttp\Psr7\Request;
-use GuzzleHttp\Exception\RequestException;
-
 use PHPUnit\Framework\TestCase;
 
 class JokeFactoryTest extends TestCase
 {
-
     /** @test */
     public function it_returns_a_random_joke()
     {
@@ -44,7 +39,6 @@ class JokeFactoryTest extends TestCase
         $this->assertSame('Chuck Norris is his own line at the DMV.', $joke);
     }
 
-
     /** @test */
     public function it_returns_the_number_of_jokes_requested()
     {
@@ -54,7 +48,7 @@ class JokeFactoryTest extends TestCase
         $this->assertCount(5, $jokes);
 
         foreach ($jokes as $joke) {
-            $this->assertStringContainsString("Chuck Norris", $joke);
+            $this->assertStringContainsString('Chuck Norris', $joke);
         }
     }
 
