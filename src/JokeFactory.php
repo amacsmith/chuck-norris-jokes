@@ -8,7 +8,6 @@ use RuntimeException;
 
 class JokeFactory
 {
-
     const JOKE_API_ENDPOINT = 'http://api.icndb.com/jokes/random';
     const JOKES_API_ENDPOINT = 'http://api.icndb.com/jokes/random/';
 
@@ -42,12 +41,12 @@ class JokeFactory
             throw new RuntimeException("getRandomJokes requires a integer greater than 0. $count was used for \$count argument.", 500);
         }
 
-        $endpoint = self::JOKES_API_ENDPOINT . $count;
+        $endpoint = self::JOKES_API_ENDPOINT.$count;
 
         $response = $this->client->get($endpoint);
 
         $jokes = json_decode($response->getBody()->getContents())->value;
 
-        return array_column ($jokes, 'joke');
+        return array_column($jokes, 'joke');
     }
 }
