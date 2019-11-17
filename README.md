@@ -21,9 +21,9 @@ use AMacSmith\ChuckNorrisJokes\JokeFactory;
 
 $jokeFactory = new JokeFactory();
 
-$joke = $jokes->getRandomJoke();
+$joke = $jokeFactory->getRandomJoke();
 
-$jokes = $jokes->getRandomJokes(10);
+$jokes = $jokeFactory->getRandomJokes(10);
 ```
 
 ## Contributing
